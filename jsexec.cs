@@ -892,6 +892,7 @@ namespace pygmalion
                                 tVal.SetItem(GLOBAL, tname, prop);
                             }
                         }
+                        v = tVal;
                         break;
 
                     case TokenType.Null:
