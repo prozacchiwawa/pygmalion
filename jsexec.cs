@@ -292,7 +292,7 @@ namespace pygmalion
                                     continue;
                                 u = s;                      // force match to do default
                             }
-                            if (object.ReferenceEquals(u, s))
+                            if (object.Equals(u, s))
                             {
                                 for (; ; )
                                 {                  // this loop exits switch_loop
@@ -892,6 +892,7 @@ namespace pygmalion
                                 tVal.SetItem(GLOBAL, tname, prop);
                             }
                         }
+                        v = tVal;
                         break;
 
                     case TokenType.Null:
